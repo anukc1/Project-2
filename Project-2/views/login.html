@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
     <title>Log In</title>
@@ -18,16 +16,23 @@
 
     <div class="container">
 
-        <div class="rowOne">
+        <div class="row One">
             <div class="jumbotron">
                 <h1 class="display-4">Food No More</h1>
-                <p class="lead">Keep Track of how much your calorie input is and get on track.</p>
+                
                 <hr class="my-4">
+
+                <div id="app-2">
+                    <span v-bind:title="message">
+                            <p class="lead">Keep Track of how much your calorie input is and get on track.</p>
+                    </span>
+                </div>
             </div>
 
         </div>
 
-        <div class="rowTwo">
+        <div class="row Two">
+            <h2>Log in</h2>
 
             <form>
                 <div class="form-row">
@@ -47,7 +52,22 @@
 
     </div>
 
+    <div class="row Three">
 
+
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+    
+    var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    message: 'You loaded this page on ' + new Date().toLocaleString()
+  }
+})
+    </script>
 </body>
 
 </html>
