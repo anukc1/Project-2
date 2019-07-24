@@ -1,5 +1,3 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
-
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+-- Creates the "foodie_db" database --
+CREATE DATABASE foodie_db;
+USE foodie_db;
